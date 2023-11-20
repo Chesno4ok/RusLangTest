@@ -1,0 +1,29 @@
+﻿<Window x:Class="RussianLangTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:Local="clr-namespace:RussianLangTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Grid x:Name="Menu">
+                <StackPanel Orientation="Horizontal" Margin="0,1,0,0" Height="Auto" VerticalAlignment="Top">
+                    <TextBox Text="" Height="20" Width="50"/>
+                    <Button x:Name="GenButton" Content="Сгенерировать примеры" Click="GenButton_Click" Height="Auto" Width="Auto" Margin="10,0,0,0"/>
+                    <Button x:Name="CheckButton" Content="Проверить задание" Click="CheckButton_Click" Height="Auto" Width="Auto" Margin="10,0,0,0"/>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="123*"/>
+                    <ColumnDefinition Width="677*"/>
+                </Grid.ColumnDefinitions>
+                <DataGrid x:Name="TaskTable" AutoGenerateColumns="True" Grid.ColumnSpan="2" ItemsSource="{Binding Tasks}" HorizontalAlignment="Center">
+                    
+                </DataGrid>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
