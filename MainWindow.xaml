@@ -5,24 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
         xmlns:Local="clr-namespace:RussianLangTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Главное очко" Height="450" Width="800">
     <Grid>
         <StackPanel>
             <Grid x:Name="Menu">
-                <StackPanel Orientation="Horizontal" Margin="0,1,0,0" Height="Auto" VerticalAlignment="Top">
-                    <TextBox Text="" Height="20" Width="50"/>
+                <WrapPanel Orientation="Horizontal" Margin="0,1,0,0" Height="Auto" VerticalAlignment="Top">
+                    <TextBox x:Name="RowInput" Text="" Height="20" Width="50"/>
                     <Button x:Name="GenButton" Content="Сгенерировать примеры" Click="GenButton_Click" Height="Auto" Width="Auto" Margin="10,0,0,0"/>
                     <Button x:Name="CheckButton" Content="Проверить задание" Click="CheckButton_Click" Height="Auto" Width="Auto" Margin="10,0,0,0"/>
-                </StackPanel>
+                    <CheckBox x:Name="RB_1" Content="Безударные гласные"/>
+                    <CheckBox x:Name="RB_2" Content="Словарные слова"/>
+                    <CheckBox x:Name="RB_3" Content="Окончания склонений"/>
+                    <CheckBox x:Name="RB_4" Content="Глухие Согласные"/>
+                </WrapPanel>
             </Grid>
             <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="123*"/>
-                    <ColumnDefinition Width="677*"/>
-                </Grid.ColumnDefinitions>
-                <DataGrid x:Name="TaskTable" AutoGenerateColumns="True" Grid.ColumnSpan="2" ItemsSource="{Binding Tasks}" HorizontalAlignment="Center">
-                    
-                </DataGrid>
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" MaxHeight="500">
+                    <UniformGrid x:Name="table" Columns="4">
+                        <TextBlock Text="123123"/>
+                        <TextBlock Text="123123"/>
+                        <TextBlock Text="123123"/>
+                    </UniformGrid>
+                </ScrollViewer>
             </Grid>
         </StackPanel>
     </Grid>

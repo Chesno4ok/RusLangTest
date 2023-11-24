@@ -18,3 +18,6 @@ C:\Users\Чеснок\YandexDisk\repos\RussianLangTest\obj\Debug\net7.0-windows\
 C:\Users\Чеснок\YandexDisk\repos\RussianLangTest\obj\Debug\net7.0-windows\RussianLangTest.genruntimeconfig.cache
 C:\Users\Чеснок\YandexDisk\repos\RussianLangTest\obj\Debug\net7.0-windows\ref\RussianLangTest.dll
 C:\Users\Чеснок\YandexDisk\repos\RussianLangTest\obj\Debug\net7.0-windows\RussianLangTest_MarkupCompile.lref
+C:\Users\Чеснок\YandexDisk\repos\RussianLangTest\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+C:\Users\Чеснок\YandexDisk\repos\RussianLangTest\obj\Debug\net7.0-windows\RussianLangTest.csproj.AssemblyReference.cache
+C:\Users\Чеснок\YandexDisk\repos\RussianLangTest\obj\Debug\net7.0-windows\RussianLangTest.csproj.CopyComplete
